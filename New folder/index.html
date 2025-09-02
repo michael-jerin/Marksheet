@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: ghostwhite;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 30px;
+      margin: 0;
+    }
+
+    .form-container {
+      width: 500px;
+    }
+
+    h1 {
+      text-align: center;
+    
+    }
+
+    form div {
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #3b3b3b;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    input[type="file"] {
+      width: 100%;
+      padding: 7px 7px;
+      border: 1px solid #acacac;
+      border-radius: 3px;
+      font-size: 14px;
+      background: #fff;
+    }
+
+    hr {
+      margin: 22px 0;
+      border-top: 1px solid #c4c3c3;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 9px;
+      background-color:beige;
+      color: #303030;
+      font-size: 15px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>REGISTRATION FORM</h1>
+    <form onsubmit="return validateForm(event)">
+      
+      <h4>Personal Detials</h4>
+      <div>
+        <label>First Name</label>
+        <input type="text" id="fName" name="fName" required>
+      </div>
+
+      <div>
+        <label>Last Name</label>
+        <input type="text" id="fName" name="lName" required>
+      </div>
+
+      <div>
+        <label>Intial</label>
+        <input type="text" id="initial" name="initial" required>
+      </div>
+
+      <div>
+        <label>Gender</label>
+        <input type="radio" id="male" name="gender" value="male">Male
+        <input type="radio" id="female" name="gender" value="female">Female
+        <input type="radio" id="others" name="gender" value="others">Others
+      </div>
+
+      <div>
+        <label>DOB</label>
+        <input type="date" id="dob" name="dob">
+      </div>
+
+      <div>
+        <label>Email</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label>Phone No.</label>
+        <input type="number" id="phone" name="phone" required>
+      </div>
+
+      <div>
+        <label>Pan No.</label>
+        <input type="text" id="pan" name="pan" required>
+      </div>
+
+      <div>
+        <label>Aadhar No.</label>
+        <input type="number" id="aadr" name="aadr" required>
+      </div>
+      
+      <hr>
+      
+      <h4>Address</h4>
+      <div>
+        <label>Street name</label>
+        <input type="text" id="street" name="street" required>
+      </div>
+
+      <div>
+        <label>City</label>
+        <input type="text" id="city" name="city" required>
+      </div>
+
+      <div>
+        <label>District</label>
+        <input type="text" id="district" name="district" required>
+      </div>
+
+      <div>
+        <label>PinCode</label>
+        <input type="number" id="pincode" name="pincode" required>
+      </div>
+
+      <hr>
+
+      <h4>Documents and Academics</h4>
+      <div>
+        <label>Photo</label>
+        <input type="file" name="photo" id="photo" required>
+      </div>
+      
+      <div>
+        <label>SSLC Marksheet</label>
+        <input type="file" name="sslc" id="sslc" required>
+      </div>
+
+      <div>
+        <label>HSC Marksheet</label>
+        <input type="file" name="hsc" id="hsc" required>
+      </div>
+
+      <div>
+        <label>CGPA</label>
+        <input type="text" name="cgpa" id="cgpa" required>
+      </div>
+
+      <input type="submit" name="submit">
+
+    </form>
+  </div>
+
+  <script src=""></script>
+
+</body>
+</html>
